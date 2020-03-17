@@ -1,0 +1,4 @@
+
+Melhor visualização: Resolução 1600x900
+
+Testes feitos no inicio do curso, sem total entendimento das funcionalidades
