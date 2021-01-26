@@ -1,0 +1,38 @@
+Cadastrar aluno  
+		@Por enquanto ok, conforme wireframe
+		# verificar links
+		#verificar mudança horizontal
+		#implantar menu
+Atualizar aluno
+		@Por enquanto ok, conforme wireframe
+		# verificar links
+		#verificar mudança horizontal
+		#implantar menu
+		#verificar posição d-flex
+Visualizar aluno
+		
+========================================================================
+Cadastrar administrador 
+		@Por enquanto ok, conforme wireframe
+		# verificar links
+		#verificar mudança horizontal
+		#implantar menu
+Atualizar administrador
+		@Por enquanto ok, conforme wireframe
+		# verificar links
+		#verificar mudança horizontal
+		#implantar menu
+		#verificar posição d-flex
+========================================================================
+Cadastrar associado 
+		@Por enquanto ok, conforme wireframe
+		# verificar links
+		#verificar mudança horizontal
+		#implantar menu
+Atualizar associado
+
+========================================================================
+
+
+
+

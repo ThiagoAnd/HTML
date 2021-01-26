@@ -1,0 +1,173 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/estilo_thiago.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>Visualizar Associados</title>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+      backgroundColor: "transparent",
+	title: {
+		text: "Utilização de Fapi-coins"
+	},
+	axisY: {
+		title: "Gastos (em %)",
+		suffix: "%",
+		includeZero: false
+	},
+	axisX: {
+		title: "Cursos"
+	},
+	data: [{
+		type: "column",
+		yValueFormatString: "#,##0.0#\"%\"",
+		dataPoints: [
+			{ label: "Direito", y: 21.0 },	
+			{ label: "Administração", y: 10.00 },	
+			{ label: "TADS", y: 27.00 },
+			{ label: "Logistica", y: 13.00 },	
+			{ label: "Pedagogia", y: 16.00 },
+			{ label: "P. Gerenciais", y: 8.00 },
+			{ label: "Arquitetura", y: 5.00 },
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+		
+    </head>
+    <body >
+	
+	<div class="modal fade" id="welcome" name="welcome" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true" >
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-heade">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        </button>
+      </div>
+      <div class="modal-body">
+	  <br>
+        <center>Tem certeza que deseja excluir o usuario?</center>
+		<br>
+      </div>
+      <div class="modal-footer bg-danger justify-content-betwen">
+	          <button class="btn btn-info ml-auto" data-dismiss="modal">Cancelar</button>
+        <button class="btn btn-success mr-auto" data-dismiss="modal">Confirmar</button>
+		
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+		<div style="background-image: url(../images/backgrounds/header4.png);">
+		
+            <div class="col-md-12">
+				<div class="row">
+					<div class="col-md-3">
+						<img class="logo" src= "../images/logo5.png">
+					</div>
+					<div class="col-md-6 usuario">
+					</br>
+						<h4>Thiago de andrade</h4>
+						<h5>Administrador</h5>
+					</div>
+					<div class="col-md-3 btn-wrap ">
+						<img class="login" src= "../images/Thiago.jpg">
+						<button type="button" class="btn btn-info rounded-circle  " data-toggle="dropdown" aria-haspopup="true"><i class="fa fa-angle-down"></i></button>
+						<ul class=" dropdown-menu  dropdown-menu-right">
+							<li class="menu-lista-login">
+								<a class="menu-cor-link" href="index.html">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+            </div>
+			 <br>
+        </div>
+         <!-- inicio  menu drop-dow-->	
+		<div class="row ">
+			<div class="menu col-md-1" >
+				<div class="btn-group">
+					<button type="button" class="btn btn-default  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="../images/icones-menu5.png">
+					</button>
+					<ul class="dropdown-menu">
+						<li class="menu-lista menu-formato-top">
+							<a class="menu-cor-link" href="adm_home.html">Home</a>
+						</li>
+						<li class="menu-lista-atual">
+							<a class="menu-cor-link" href="#">Estatisticas</a>
+						</li>
+						<li class="menu-lista">
+							<a class="menu-cor-link" href="adm_V_AL.html">Visualizar Alunos</a>
+						</li>
+						<li class="menu-lista menu-formato-bottom">
+							<a class="menu-cor-link" href="adm_C_AL.html">Cadastrar Aluno</a>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="menu col-md-10" >
+					  <!-- informacao qual pagina local -->	
+					<h3 class="info-menu">Estatisticas</h3>
+			</div>
+			<div class="menu col-md-1" ></div>
+		</div>
+	<!-- fim  menu drop-dow   e nformacao qual pagina local -->	
+		<!--campo de busca-->
+			<div  style="background-image: url(../images/backgrounds/homebackground2.jpg);background-size:cover;margin-top:-70px;">
+<br><br>
+<div class="row justify-content-center">
+<div class="col-md-10" id="chartContainer" style="height: 500px; width: 50%;"></div>
+</div>
+<script src="canvasjs.min.js"></script>
+
+
+
+
+<br>		
+		<!-------->
+		
+        <!-- FINAL DO CORPO -->
+			<div class="footer2">
+				<div class="">
+					<div class="row ">
+						<div class="col-md-4 d-flex justify-content-center"><i class="fab fa-whatsapp">&nbsp;&nbsp;(41)9977-13790</i><i class="fas fa-at">&nbsp;&nbsp;Cardsystem@gmail.com</i> 
+						</div>
+						<div class="col-md-4 d-flex justify-content-center">
+							Card system - 2018 - All Rights Reserved  &reg;
+						</div>
+						<div class="col-md-4 d-flex justify-content-center" >
+							<i class="fab fa-facebook  " ></i>
+							<i class="fab fa-instagram "></i>
+							<i class="fab fa-youtube "></i>
+							<i class="fab fa-twitter "></i>
+						</div>
+					</div> 
+				</div>
+			</div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
